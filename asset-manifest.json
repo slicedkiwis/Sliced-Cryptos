@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Sliced-Cryptos/static/css/main.28e52e89.css",
-    "main.js": "/Sliced-Cryptos/static/js/main.906a9618.js",
+    "main.js": "/Sliced-Cryptos/static/js/main.b58497b4.js",
     "static/media/preview1.png": "/Sliced-Cryptos/static/media/preview1.e392c5104e834f085638.png",
     "static/media/newspreview.avif": "/Sliced-Cryptos/static/media/newspreview.17d57c3d5a90155378fa.avif",
     "static/media/preview2.png": "/Sliced-Cryptos/static/media/preview2.cf7e3b0adbcefda4f3b1.png",
     "index.html": "/Sliced-Cryptos/index.html",
     "main.28e52e89.css.map": "/Sliced-Cryptos/static/css/main.28e52e89.css.map",
-    "main.906a9618.js.map": "/Sliced-Cryptos/static/js/main.906a9618.js.map"
+    "main.b58497b4.js.map": "/Sliced-Cryptos/static/js/main.b58497b4.js.map"
   },
   "entrypoints": [
     "static/css/main.28e52e89.css",
-    "static/js/main.906a9618.js"
+    "static/js/main.b58497b4.js"
   ]
 }

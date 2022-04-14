@@ -1,0 +1,41 @@
+:root{
+   --dark-bg-color: #000C14;
+   --dark-bg-main-color:#001524;
+   --dar-bg-seconday-color: #9AADBF;
+   --dark-bg-tertiary-color: #6D98BA;
+   --dark-bg-text-color:#9AADBF;
+
+   --light-bg-color:#e7ecef;
+    --light-bg-main-color:#34496633;
+    --light-bg-secondary-color:#b4cded;
+    --light-bg-tertiary-color:#274c77:
+    --light-bg-text-color:rgb(3,14,27);
+    
+}
+.home{
+    min-height: 100vh;
+    overflow: auto;
+    scrollbar-width: none;
+}
+.home-dark{
+    color: var(--dar-bg-seconday-color);
+    background: var(--dark-bg-color);
+}
+.home-light{
+    background: var(--light-bg-color);
+    color: var(--dar-bg-seconday-color);
+}
+.home *{
+    margin: 1rem;
+}
+.home::-webkit-scrollbar{
+    display: none;
+}
+.home .stats-list-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.home h1{
+    text-align: center;
+}

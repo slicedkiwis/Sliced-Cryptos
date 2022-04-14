@@ -1,0 +1,18 @@
+:root{
+   --bgColor:#001524;
+   --darkerBgColor: #000C14;
+   --lightBgColor:white;
+   --secondaryColor: #9AADBF;
+   --tertiaryColor : #6D98BA;
+   --textColor:white;
+}
+
+.news-card{
+    background: #6d99ba2f !important;
+    color: var(--secondaryColor) !important;
+}
+.news-card .provider-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

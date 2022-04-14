@@ -1,0 +1,74 @@
+:root{
+  --dark-bg-color: #000C14;
+  --dark-bg-main-color:#001524;
+  --dar-bg-seconday-color: #9AADBF;
+  --dark-bg-tertiary-color: #6D98BA;
+  --dark-bg-text-color:#9AADBF;
+
+  --light-bg-color:#e7ecef;
+   --light-bg-main-color:#34496633;
+   --light-bg-secondary-color:#b4cded;
+   --light-bg-tertiary-color:#274c77:
+   --light-bg-text-color:rgb(3,14,27);
+   
+}
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.about-dark{
+  background: var(--dark-bg-color);
+}
+.about-light{
+  background: var(--light-bg-color);
+}
+.about::-webkit-scrollbar {
+  display: none;
+}
+.about * {
+  margin: 1;
+}
+
+.about .titles {
+  color: var(--tertiaryColor);
+  background: rgba(0, 0, 0, 0.329);
+}
+
+.about .content {
+  color: var(--secondaryColor);
+}
+
+.about-content-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 30%;
+  margin: 1rem;
+  min-height: 30rem;
+}
+.container-dark{
+  background-color: #00000075;
+}
+.container-light{
+  background-color: #00000007;
+}
+.about-content-container h1,h3 {
+  text-align: center;
+   margin-top:1rem;
+}
+.about-content-container p {
+  text-align: center;
+  line-height: 3;
+}
+.about-content-container ul {
+  text-align: center;
+  text-decoration: none; 
+}.about-content-container li {
+    list-style: none;
+}

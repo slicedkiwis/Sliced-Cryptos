@@ -1,13 +1,42 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Varela+Round&display=swap');
+:root{
+   --dark-bg-color: #000C14;
+   --dark-bg-main-color:#001524;
+   --dar-bg-seconday-color: #9AADBF;
+   --dark-bg-tertiary-color: #6D98BA;
+   --dark-bg-text-color:#9AADBF;
+
+   --light-bg-color:#e7ecef;
+    --light-bg-main-color:#34496633;
+    --light-bg-secondary-color:#b4cded;
+    --light-bg-tertiary-color:#274c77:
+    --light-bg-text-color:rgb(3,14,27);
+    
+}
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,body{
+  width: 100%;
+  height: 100%;
+  color: white;
+  overflow: scroll;
+  scrollbar-width: none;
+  color: var(--dark-bg-tertiary-color);
+}
+a{
+  color: var(--tertiaryColor);
+}
+body::-webkit-scrollbar{
+  display: none;  
+}
+#app{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  font-family:'Poppins',sans-serif; 
 }

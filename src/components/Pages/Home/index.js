@@ -1,0 +1,5 @@
+export {default as Coin } from './HomePageCoin'
+export {default as CoinList } from './HomePageCoinList'
+export {default as Exchange} from './HomePageExchange'
+export {default as Exchanges} from './HomePageExchanges'
+export {default as GlobalStats} from './GlobalStats'

@@ -1,0 +1,57 @@
+:root {
+  --dark-bg-color: #000c14;
+  --dark-bg-main-color: #001524;
+  --dar-bg-seconday-color: #9aadbf;
+  --dark-bg-tertiary-color: #6d98ba;
+  --dark-bg-text-color: #9aadbf;
+
+  --light-bg-color: #e7ecef;
+  --light-bg-main-color: #34496633;
+  --light-bg-secondary-color: #b4cded;
+}
+.header {
+  width: 100%;
+  min-height: 10%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-dark {
+  background: var(--dark-bg-color);
+}
+.header-light {
+  background: var(--light-bg-color);
+}
+.header ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 100%;
+  width: 100%;
+  list-style: none;
+}
+.header ul a:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.mode-switch-light .MuiSwitch-thumb {
+  margin: 1 !important;
+  transform: translate(6px) !important;
+  background-color: #000c14 !important;
+}
+.mode-switch-dark .MuiSwitch-thumb {
+  margin: 1 !important;
+  transform: translate(6px) !important;
+  background-color: white !important;
+}
+.theme-switcher-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,18 @@
+.coin-list{
+    display: flex;
+    min-width: 100%;
+    flex-direction: column;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.coin-list-container{
+    display: flex; 
+    max-height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+.coin-list::-webkit-scrollbar{
+    display: none;
+}

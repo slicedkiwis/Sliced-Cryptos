@@ -1,0 +1,42 @@
+:root{
+   --dark-bg-color: #000C14;
+   --dark-bg-main-color:#001524;
+   --dar-bg-seconday-color: #9AADBF;
+   --dark-bg-tertiary-color: #6D98BA;
+   --dark-bg-text-color:#9AADBF;
+
+   --light-bg-color:#e7ecef;
+    --light-bg-main-color:#34496633;
+    --light-bg-secondary-color:#b4cded;
+    --light-bg-tertiary-color:#274c77:
+    --light-bg-text-color:rgb(3,14,27);
+    
+}
+.news{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.news-dark{
+    background-color: var(--dark-bg-color);
+}
+.news-light{
+   background-color: var(--light-bg-color); 
+}
+.news-light *{
+    box-shadow: 0rem 0rem 0rem !important;
+}
+.news::-webkit-scrollbar{
+    display: none;
+}
+.news *{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top:1rem;
+}
+.news-image{
+    max-width: 80%;
+}

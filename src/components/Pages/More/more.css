@@ -1,0 +1,51 @@
+:root{
+    --dark-bg-color: #000C14;
+    --dark-bg-main-color:#001524;
+    --dar-bg-seconday-color: #9AADBF;
+    --dark-bg-tertiary-color: #6D98BA;
+    --dark-bg-text-color:#9AADBF;
+  
+    --light-bg-color:#e7ecef;
+     --light-bg-main-color:#34496633;
+     --light-bg-secondary-color:#b4cded;
+     --light-bg-tertiary-color:#274c77:
+     --light-bg-text-color:rgb(3,14,27);
+     
+  }
+.more{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.more-dark{
+    background: var(--dark-bg-color);
+}
+.more-light{
+    background: var(--light-bg-color);
+}
+
+.more-card{
+    max-width:40% !important;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+.more h1{
+    margin: 0;
+    padding: 0;
+}
+.more img{
+    width: 100%;
+    height: auto;
+}
+.previews{
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

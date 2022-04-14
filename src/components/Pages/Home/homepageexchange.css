@@ -1,0 +1,48 @@
+:root{
+    --dark-bg-color: #000C14;
+    --dark-bg-main-color:#001524;
+    --dar-bg-seconday-color: #9AADBF;
+    --dark-bg-tertiary-color: #6D98BA;
+    --dark-bg-text-color:#9AADBF;
+ 
+    --light-bg-color:#e7ecef;
+     --light-bg-main-color:#34496633;
+     --light-bg-secondary-color:#b4cded;
+     --light-bg-tertiary-color:#274c77:
+     --light-bg-text-color:rgb(3,14,27);
+     
+ }
+.home-exchange *{
+    margin: 0;
+}
+.home-exchange{
+    display: flex;
+    flex-direction: column;
+    min-width: 18rem;
+    height: 12rem;
+    border-radius: 0.3rem;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.home-exchange .home-card-action{
+    max-width: 18rem;
+    height: 100%;
+}
+.home-exchange .exchange-about{
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.home-exchange .exchange-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-exchange::-webkit-scrollbar{
+    display: none;
+}
+.home-exchange img{
+   width:auto;
+   height:auto;
+}

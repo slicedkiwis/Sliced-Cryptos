@@ -1,0 +1,48 @@
+:root {
+  --bgColor: #0000007a;
+  --darkerBgColor: #000c14;
+  --secondaryColor: #9aadbf;
+  --tertiaryColor: #6d98ba;
+  --textColor: white;
+}
+.coin-card {
+  max-height: 40rem !important;
+  max-width: 20rem !important;
+  background: #a2c4e425 !important;
+  overflow-y: scroll !important;
+  color: var(--secondaryColor) !important;
+}
+.coin-card::-webkit-scrollbar {
+  width: 0.7rem;
+  height: 20rem;
+}
+.coin-card::-webkit-scrollbar-track {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  background: var(--textColor);
+  border-radius: 10rem;
+}
+.coin-card::-webkit-scrollbar-thumb {
+  border-radius: 10rem;
+  background: var(--secondaryColor);
+}
+.coin-card::-webkit-scrollbar-button {
+  height: 50px;
+}
+.coin-image {
+  width: 100%;
+}
+.coin-img-container {
+  max-width: 10%;
+  height: auto;
+}
+
+.coin-price {
+  color: rgb(0, 132, 255);
+}
+.coin-positive {
+  color: green;
+}
+.coin-negative {
+  color: red;
+}

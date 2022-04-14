@@ -1,0 +1,38 @@
+:root{
+   --dark-bg-color: #000C14;
+   --dark-bg-main-color:#001524;
+   --dar-bg-seconday-color: #9AADBF;
+   --dark-bg-tertiary-color: #6D98BA;
+   --dark-bg-text-color:#9AADBF;
+
+   --light-bg-color:#e7ecef;
+    --light-bg-main-color:#34496633;
+    --light-bg-secondary-color:#b4cded;
+    --light-bg-tertiary-color:#274c77:
+    --light-bg-text-color:rgb(3,14,27);
+    
+}stats-list-container
+.global-stats{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+.global-stats table{
+    width: 100%;
+    border-radius: 0.3rem;
+}
+.global-stats tr{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+.global-stats .table-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.global-stats .table-container h1{
+    text-align: center;
+}

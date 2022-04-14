@@ -1,0 +1,59 @@
+:root{
+   --dark-bg-color: #000C14;
+   --dark-bg-main-color:#001524;
+   --dar-bg-seconday-color: #9AADBF;
+   --dark-bg-tertiary-color: #6D98BA;
+   --dark-bg-text-color:#9AADBF;
+
+   --light-bg-color:#e7ecef;
+    --light-bg-main-color:#34496633;
+    --light-bg-secondary-color:#b4cded;
+    --light-bg-tertiary-color:#274c77:
+    --light-bg-text-color:rgb(3,14,27);
+    
+}
+.exchanges-page{
+    min-height: 100vh;
+
+    overflow: auto;
+    scrollbar-width: none;
+
+    display: flex;
+    justify-content: center;
+}
+.exchanges-page-dark{
+    background: var(--dark-bg-main-color);
+}
+.exchanges-page-light{
+    background: var(--light-bg-color);
+}
+.exchanges-page::-webkit-scrollbar{
+    display: none;
+}
+.exchanges-page *{
+    margin: 1rem;
+}
+.exchanges-page-table{
+    width: 100%;
+}
+.exchanges-page tr{
+    background:#6d99ba17 ;
+} 
+.exchanges-page img{
+    width: 40%;
+}
+.exchange-table-image-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 14rem;
+}
+.exchange-table-image-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 14rem;
+}
+
+
+ 

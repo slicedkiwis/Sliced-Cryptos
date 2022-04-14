@@ -1,0 +1,48 @@
+:root{
+    --dark-bg-color: #000C14;
+    --dark-bg-main-color:#001524;
+    --dar-bg-seconday-color: #9AADBF;
+    --dark-bg-tertiary-color: #6D98BA;
+    --dark-bg-text-color:#9AADBF;
+  
+    --light-bg-color:#e7ecef;
+     --light-bg-main-color:#34496633;
+     --light-bg-secondary-color:#b4cded;
+     --light-bg-tertiary-color:#274c77:
+     --light-bg-text-color:rgb(3,14,27);
+     
+  }
+
+.footer{
+    margin: 0;
+
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer-light{
+    background:var(--light-bg-color);
+}
+.footer-dark{
+    background:var(--dark-bg-color);
+}
+
+.footer ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+.footer ul li:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+.footer .icon-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}

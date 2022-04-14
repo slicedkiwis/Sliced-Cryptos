@@ -13,7 +13,7 @@ const About = ({ mode }) => {
         <p>
           The vision for sliced crypto was to build an all encompassing
           <br />
-          crypto information site with a budget of zero dollars.
+          crypto information site, with a budget of zero dollars.
           <br />
           This project uses primarily the coin ranking api found available on{" "}
           <a

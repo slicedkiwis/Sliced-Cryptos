@@ -25,7 +25,6 @@
     "gh-pages": "^3.2.3",
     "millify": "^4.0.0",
     "moment": "^2.29.2",
-    "momment": "^0.0.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "6",

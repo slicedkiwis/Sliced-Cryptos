@@ -53,7 +53,6 @@ const About = ({ mode }) => {
         <ul>
           <li>Material Ui</li>
           <li>Rechart</li>
-          <li>Redux toolkit</li>
           <li>Millify</li>
           <li>Moment</li>
         </ul>

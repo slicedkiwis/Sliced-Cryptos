@@ -55,9 +55,12 @@ input:focus +.search-list-container{
     list-style: none;
 }
 
-search-list-item{
+.search-list-item{
     width: 100%;
-    min-height: 100%;
+}
+.search-list-item:hover{
+    cursor: pointer;
+    background: #b4cded5b;
 }
 .search-list-container-dark{
     background: var(--dark-bg-color);
@@ -73,7 +76,7 @@ search-list-item{
   font-size: larger;
   outline: none;
   border: none;
-  font-family: 'Varela Round',sans-serif;
+  font-family: 'Varela Round';
 
 }
 .search-bar-dark{
@@ -84,7 +87,6 @@ search-list-item{
 .search-bar-light{
     background: var(--light-bg-color);
     border: 0.1rem solid var(--light-bg-secondary-color);
-    color: var(--light-bg-tertiary-color);
 }
 .search-bar-light::placeholder { 
     color: var(--dark-bg-tertiary-color);

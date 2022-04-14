@@ -5,14 +5,15 @@ import "./exchanges.css";
 const Exchanges = ({ mode }) => {
   const [exchangeData, setExchangeData] = useState();
   const { REACT_APP_API_KEY } = process.env;
-  const cryptoHeaders = {
-    method: "GET",
-    headers: {
-      "X-RapidAPI-Host": "coinranking1.p.rapidapi.com",
-      "X-RapidAPI-Key": `${REACT_APP_API_KEY}`,
-    },
-  };
+
   useEffect(() => {
+    const cryptoHeaders = {
+      method: "GET",
+      headers: {
+        "X-RapidAPI-Host": "coinranking1.p.rapidapi.com",
+        "X-RapidAPI-Key": `${REACT_APP_API_KEY}`,
+      },
+    };
     fetch(
       "https://coinranking1.p.rapidapi.com/coin/Qwsogvtv82FCd/exchanges?referenceCurrencyUuid=yhjMzLPhuIDl&limit=100&offset=0&orderBy=24hVolume&orderDirection=desc",
       cryptoHeaders
@@ -22,7 +23,7 @@ const Exchanges = ({ mode }) => {
         setExchangeData(response);
       })
       .catch((err) => console.error(err));
-  }, []);
+  }, [REACT_APP_API_KEY]);
   if (!exchangeData) return <Loader mode={mode} />;
   return (
     <div
@@ -39,7 +40,7 @@ const Exchanges = ({ mode }) => {
               <h1>Rank</h1>
             </th>
             <th>
-              <h1></h1>
+              <h1>Icon</h1>
             </th>
             <th>
               <h1>Name</h1>

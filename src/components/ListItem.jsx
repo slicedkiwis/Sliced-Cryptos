@@ -3,12 +3,13 @@ const ListItem = (props) => {
     return (
       <a href={props.data?.url} rel="noreferrer" target="_blank">
         {" "}
-        <h4> {props.children} </h4>{" "}
+        <h4 className={props.className}> {props.children} </h4>{" "}
       </a>
     );
 
   return (
     <h4
+      className={props.className}
       onClick={() => {
         if (props.page === "coins") {
           const makeChartData = () => {

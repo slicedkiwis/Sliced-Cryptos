@@ -10,15 +10,15 @@ const Coins = ({ mode }) => {
   const [toggleModal, setToggleModal] = useState(false);
   const [modalData, setModalData] = useState({});
   const { REACT_APP_API_KEY } = process.env;
-  const cryptoHeaders = {
-    method: "GET",
-    headers: {
-      "X-RapidAPI-Host": "coinranking1.p.rapidapi.com",
-      "X-RapidAPI-Key": `${REACT_APP_API_KEY}`,
-    },
-  };
-
   useEffect(() => {
+    const cryptoHeaders = {
+      method: "GET",
+      headers: {
+        "X-RapidAPI-Host": "coinranking1.p.rapidapi.com",
+        "X-RapidAPI-Key": `${REACT_APP_API_KEY}`,
+      },
+    };
+
     fetch(
       "https://coinranking1.p.rapidapi.com/coins?timePeriod=1y&limit=100",
       cryptoHeaders
@@ -29,7 +29,7 @@ const Coins = ({ mode }) => {
         setFilteredCoins(response?.data?.coins);
       })
       .catch((err) => console.error(err));
-  }, []);
+  }, [REACT_APP_API_KEY]);
   if (!coins) return <Loader mode={mode}></Loader>;
   if (toggleModal)
     return <Modal mode={mode} data={modalData} toggleModal={setToggleModal} />;

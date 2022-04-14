@@ -1,4 +1,3 @@
-import { CardActionArea } from "@mui/material";
 import { useState } from "react";
 import ListItem from "./ListItem";
 import "./searchbar.css";

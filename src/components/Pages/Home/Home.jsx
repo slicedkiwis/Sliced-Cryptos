@@ -2,20 +2,19 @@ import { useState, useEffect } from "react";
 import { GlobalStats, Exchanges, CoinList } from "./index";
 import Loader from "../../Loader";
 import "./home.css";
-import SearchBar from "../../SearchBar";
 const Home = ({ mode }) => {
   const [coinData, setCoinData] = useState(null);
   const [exchangeData, setExchangeData] = useState(null);
   const { REACT_APP_API_KEY } = process.env;
-  const cryptoHeaders = {
-    method: "GET",
-    headers: {
-      "X-RapidAPI-Host": "coinranking1.p.rapidapi.com",
-      "X-RapidAPI-Key": `${REACT_APP_API_KEY}`,
-    },
-  };
-
   useEffect(() => {
+    const cryptoHeaders = {
+      method: "GET",
+      headers: {
+        "X-RapidAPI-Host": "coinranking1.p.rapidapi.com",
+        "X-RapidAPI-Key": `${REACT_APP_API_KEY}`,
+      },
+    };
+
     fetch(
       "https://coinranking1.p.rapidapi.com/coins?timePeriod=1y&limit=100",
       cryptoHeaders
@@ -34,8 +33,7 @@ const Home = ({ mode }) => {
         setExchangeData(response);
       })
       .catch((err) => console.error(err));
-  }, []);
-
+  }, [REACT_APP_API_KEY]);
   if (!coinData || !exchangeData)
     return <Loader mode={mode} color="secondary" />;
 

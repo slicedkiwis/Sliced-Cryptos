@@ -1,5 +1,5 @@
 import { Card, CardContent, CardActionArea } from "@mui/material";
-import { ResponsiveContainer, AreaChart, Area } from "recharts";
+import { AreaChart, Area } from "recharts";
 import millify from "millify";
 import "./coin.css";
 const Coin = ({ data, toggleModal, setModalData }) => {

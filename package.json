@@ -2,7 +2,7 @@
   "name": "sliced-crypto",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://slicedkiwis.github.io/sliced-cryptos",
+  "homepage": "https://slicedkiwis.github.io/Sliced-Cryptos/",
   "browser": {
     "crypto": false,
     "fs": false,

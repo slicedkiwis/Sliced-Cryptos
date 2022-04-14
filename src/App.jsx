@@ -11,7 +11,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home mode={lightMode} />}></Route>
         <Route
-          path="sliced-cryptos"
+          path="Sliced-Cryptos/"
           element={<Home mode={lightMode} />}
         ></Route>
         <Route path="coins" element={<Coins mode={lightMode} />}></Route>
